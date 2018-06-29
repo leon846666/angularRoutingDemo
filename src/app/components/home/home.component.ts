@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router,NavigationExtras} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -13,10 +13,22 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+
   }
   goNews(){
     alert("go news ")
-    this.router.navigate(['/newscontent/1'])
+    this.router.navigate(['/newscontent','123'])
   }
 
+  goShop(aid,id){
+    let navigateExtras:NavigationExtras={
+      queryParams:{
+        'aid':aid,
+        'id':id
+      }
+    }
+    this.router.navigate(['/shoplist'],navigateExtras)
+
+   
+  }
 }

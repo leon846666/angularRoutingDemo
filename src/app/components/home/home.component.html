@@ -1,9 +1,21 @@
-<p>
-  home works!
-</p>
-<br>
-<br>
 
-<button (click)="goNews()">
-  click to redirect by Js
-</button>
+
+<div class="con">
+
+
+      <div class="left">
+         
+        <a  routerLink="/home/welcome"routerLinkActive="active">welcome</a><br><br>
+
+
+      </div>
+      
+      <div class="right">
+
+        <a  routerLink="/shop/shopcategory"routerLinkActive="active">category</a><br><br>
+        <a  routerLink="/shop/shoplist"routerLinkActive="active">list</a><br><br>
+        <router-outlet></router-outlet>
+
+      </div>
+
+</div>

@@ -7,6 +7,10 @@ import { HomeComponent } from './components/home/home.component';
 import { NewsComponent } from './components/news/news.component';
 import { UserComponent } from './components/user/user.component';
 import { NewscontentComponent } from './components/newscontent/newscontent.component';
+import { ShoplistComponent } from './components/shoplist/shoplist.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
+import { ShopcategoryComponent } from './components/shopcategory/shopcategory.component';
+import { ShopComponent } from './components/shop/shop.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { NewscontentComponent } from './components/newscontent/newscontent.compo
     HomeComponent,
     NewsComponent,
     UserComponent,
-    NewscontentComponent
+    NewscontentComponent,
+    ShoplistComponent,
+    WelcomeComponent,
+    ShopcategoryComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,
